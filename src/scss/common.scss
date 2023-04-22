@@ -1,0 +1,32 @@
+.button {
+    padding: 15px 48px;
+    background: #5A98D0;
+    border-radius: 10px;
+
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+
+    &:hover {
+        box-shadow: inset 5px 10px 20px rgba(53, 110, 173, 0.2);
+    }
+}
+
+.title {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    max-width: 360px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}

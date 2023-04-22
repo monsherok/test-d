@@ -1,0 +1,125 @@
+.about {
+    padding: 192px 0 212px;
+
+    @media (max-width: 860px) {
+        padding: 50px 10px;
+    }
+
+    // .about__container
+
+    &__container {}
+
+    // .about__card-inner
+
+    &__card-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 100px;
+        gap: 30px;
+
+        @media (max-width: 660px) {
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about__card:nth-child(1) {
+            transform: translateY(calc(-50% - 100px));
+
+            @media (max-width: 660px) {
+                transform: none;
+            }
+        }
+    }
+
+    // .about__title
+
+    &__title {
+        color: #316099;
+    }
+
+    // .about__card
+
+    &__card {
+        max-width: 380px;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        padding: 48px;
+        margin-left: auto;
+        transition: box-shadow .3s ease;
+        &:hover {
+            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.3);
+        }
+        @media (max-width: 860px) {
+            margin: 0;
+        }
+    }
+
+    // .about__card-image
+
+    &__card-image {
+
+        width: 132px;
+        height: 132px;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 56px;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 19px);
+            transform: translateX(-50%);
+        }
+
+        .big-image {
+            left: 50%;
+        }
+    }
+
+    // .about__card-title
+
+    &__card-title {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+    // .about__card-text
+
+    &__card-text {
+        margin-bottom: 32px;
+    }
+
+    // .about__card-link
+
+    &__card-link {
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #5A98D0;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            &::after {
+                padding-left: 35px;
+            }
+        }
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z' fill='%235A98D0'/%3E%3C/svg%3E%0A");
+            width: 16px;
+            height: 16px;
+            padding-left: 28px;
+            transform: translateY(-15%);
+            transition: all .3s ease;
+        }
+    }
+}

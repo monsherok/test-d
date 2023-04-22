@@ -1,0 +1,28 @@
+@font-face {
+	font-family: Galien;
+	font-display: swap;
+	src: url("../fonts/Galien-bold.woff2") format("woff2"), url("../fonts/Galien-bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: gilroy;
+	font-display: swap;
+	src: url("../fonts/gilroy-semibold.woff") format("woff"), url("../fonts/gilroy-semibold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: gilroy;
+	font-display: swap;
+	src: url("../fonts/gilroy-regular.woff") format("woff"), url("../fonts/gilroy-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
