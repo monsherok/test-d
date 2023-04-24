@@ -1,8 +1,3 @@
-// Подключение функционала "Чертогов Фрилансера"
-import { isMobile } from "./functions.js";
-// Подключение списка активных модулей
-import { flsModules } from "./modules.js";
-
 let menuBtn = document.querySelector('.header__menu')
 
 if (menuBtn) {

@@ -128,10 +128,6 @@ const config = {
 					noErrorOnMissing: true,
 					force: true
 				}, {
-					from: `${srcFolder}/files`, to: `files`,
-					noErrorOnMissing: true,
-					force: true
-				}, {
 					from: `${paths.src}/favicon.ico`, to: `./`,
 					noErrorOnMissing: true
 				}
