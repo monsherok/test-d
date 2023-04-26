@@ -1,8 +1,10 @@
 
 // Подключение основного файла стилей
 import "../scss/style.scss";
-import Modal from "./files/modal.js"
+import modal from "./files/modal.js"
+import * as form from "./files/form.js"
 import "./files/script.js";
 
-// Вызываем класс с модальными окнами
-new Modal()
+// компоненты форм
+
+form.formSubmit()
