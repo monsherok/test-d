@@ -2,13 +2,13 @@
   <div class="modal-content">
     <span data-close class="close">&times;</span>
     <h3 class="modal__title">SEND US MESSAGE</h3>
-    <form action="POST">
+    <form data-form>
       <label for="name">Full Name</label>
-      <input id="name" type="text" placeholder="Your Name">
+      <input id="name" name="name" data-required="name" type="text" placeholder="Your Name">
       <label for="email">Full Name</label>
-      <input name="email" id="email" placeholder="Your Email">
+      <input name="email" data-required="email" id="email" placeholder="Your Email">
       <label for="textarea">Message</label>
-      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <textarea name="textarea" data-required="message" id="textarea" placeholder="Your Message"></textarea>
       <button class="button form__button" type="submit">SUBMIT</button>
     </form>
   </div>
@@ -17,8 +17,6 @@
 <div id="modal-2" data-modal class="modal">
   <div class="modal-content">
     <span data-close class="close">&times;</span>
-    <h3 class="modal__title">
-      HHHHH
-    </h3>
+    <h3 class="modal__title"></h3>
   </div>
 </div>

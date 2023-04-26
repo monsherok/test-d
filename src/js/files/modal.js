@@ -1,4 +1,5 @@
-export default class Modal {
+
+class Modal {
     constructor() {
         this.datas = {
             modalWindow: 'data-modal',
@@ -18,7 +19,6 @@ export default class Modal {
     init() {
         document.addEventListener('click', e => {
             if (e.target.classList.contains('open-modal')) {
-                
                 this.modalOpen(e)
             } else if (e.target.closest(`.${this.classes.open}`)) {
                 if (!e.target.closest(`.${this.classes.content}`) || e.target.hasAttribute(`${this.datas.modalClose}`)) {
@@ -33,10 +33,8 @@ export default class Modal {
         e.preventDefault()
         const modal = document.querySelector(`#${e.target.dataset.modalBtn}`)
         this.activeModalClass = e.target.dataset.modalBtn
-        console.log(this.activeModalClass);
         if (modal) {
             this.toggleModal(modal)
-
         }
     }
 
@@ -45,3 +43,6 @@ export default class Modal {
         document.documentElement.classList.toggle('lock')
     }
 }
+const modal = new Modal()
+
+export default modal

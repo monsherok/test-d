@@ -117,6 +117,9 @@
 
         color: rgba(#1F3F68, 0.2);
       }
+      &.error {
+        border: 1px solid rgba(#ff0000, 0.4);
+      }
     }
 
     textarea {
@@ -125,17 +128,14 @@
     }
   }
 
-  .close {}
-
   .button {
     width: 100%;
   }
 
-  .form {
 
-    // .form__button
+}
 
-    &__button {}
-  }
-
+#modal-2 .modal__title {
+  margin-bottom: 0;
+  text-align: center;
 }
