@@ -1,5 +1,8 @@
 .modal {
-  display: none;
+  // display: none;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 999;
   left: 0;
@@ -8,22 +11,45 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+
+  &.modal__open {
+
+    opacity: 1;
+    visibility: visible;
+
+    .modal-content {
+      width: 100%;
+      max-width: 540px;
+      opacity: 1;
+
+      & input,
+      textarea {
+        max-width: 100%;
+        padding: 21px 42px !important;
+      }
+    }
+  }
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: var(--color-white);
   margin: 5% auto;
   padding: 56px;
   border: 1px solid #888;
-  width: 100%;
-  max-width: 540px;
+  opacity: 0;
+  max-width: 10px;
   position: relative;
-  animation-name: modalopen;
-  animation-duration: 0.5s;
-
-  background: #FFFFFF;
+  transition: all .3s ease;
+  background: var(--color-white);
   box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
+
+  & input,
+  textarea {
+    max-width: 0;
+    padding: 0 !important;
+    transition: all .3s ease;
+  }
 }
 
 .close {
@@ -43,15 +69,6 @@
   cursor: pointer;
 }
 
-@keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 
 .modal {
 
@@ -62,7 +79,7 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.04em;
-    color: #1F3F68;
+    color: var(--color-main);
     font-weight: 600;
   }
 
@@ -74,7 +91,7 @@
       font-size: 16px;
       line-height: 30px;
       letter-spacing: 0.04em;
-      color: #1F3F68;
+      color: var(--color-main);
 
       opacity: 0.8;
       margin-bottom: 8px;
@@ -84,9 +101,10 @@
     textarea {
       width: 100%;
       padding: 21px 42px;
-      border: 1px solid rgba(#356EAD, 0.4);
+      border: 1px solid rgba(#1F3F68, 0.4);
       border-radius: 10px;
       margin-bottom: 32px;
+      display: block;
 
       &::placeholder {
         font-size: 16px;
@@ -103,6 +121,7 @@
 
     textarea {
       margin-bottom: 72px;
+      resize: vertical;
     }
   }
 

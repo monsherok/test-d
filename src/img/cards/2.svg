@@ -67,15 +67,15 @@
 <stop offset="1" stop-color="#AAACAE"/>
 </linearGradient>
 <linearGradient id="paint9_linear_0_1737" x1="43.5767" y1="94.557" x2="63.884" y2="103.338" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFF8E1"/>
+<stop stop-color="var(--color-white)8E1"/>
 <stop offset="1" stop-color="#FFCC80"/>
 </linearGradient>
 <linearGradient id="paint10_linear_0_1737" x1="7875.06" y1="2941.73" x2="8393.29" y2="3509.97" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFF8E1"/>
+<stop stop-color="var(--color-white)8E1"/>
 <stop offset="1" stop-color="#FFCC80"/>
 </linearGradient>
 <linearGradient id="paint11_linear_0_1737" x1="8044.47" y1="3227.22" x2="8499.41" y2="4088.69" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFF8E1"/>
+<stop stop-color="var(--color-white)8E1"/>
 <stop offset="1" stop-color="#FFCC80"/>
 </linearGradient>
 </defs>

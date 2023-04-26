@@ -1,5 +1,5 @@
 .footer {
-    background: #5A98D0;
+    background: var(--color-blue-gray);
     position: relative;
 
     // 
@@ -7,7 +7,7 @@
         content: "";
         width: 100%;
         height: 100%;
-        background: #316099;
+        background: var(--color-facebook);
         position: absolute;
         transform: translateX(-5%);
 
@@ -21,7 +21,7 @@
         position: relative;
         width: 80%;
         height: 1px;
-        background: rgba(#ffffff, 0.4);
+        background: rgba(#fff, 0.4);
 
         @media (max-width: 760px) {
             width: 100%;
@@ -32,7 +32,7 @@
 
     &__container {
         position: relative;
-        color: #FFFFFF;
+        color: var(--color-white);
         margin: 97px auto 32px;
     }
 
@@ -155,7 +155,7 @@
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 0.05em;
-        color: #FFFFFF;
+        color: var(--color-white);
         opacity: 0.4;
     }
 }
