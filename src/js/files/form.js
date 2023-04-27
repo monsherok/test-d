@@ -65,7 +65,6 @@ export function formSubmit() {
         let errors = 0
         if (requiredInputs.length) {
             requiredInputs.forEach(requiredInput => {
-                console.log(requiredInput);
                 errors += formValidate.checkValidate(requiredInput)
             })
         }
