@@ -1,5 +1,5 @@
 .work {
-    background: var(--color-blue-gray);
+    background: $blue-gray;
     position: relative;
 
     // 
@@ -7,7 +7,7 @@
         content: "";
         width: 100%;
         height: 100%;
-        background: var(--color-facebook);
+        background: $facebook;
         border-radius: 0px 200px 0px 0px;
         position: absolute;
         transform: translateX(-5%);
@@ -26,7 +26,7 @@
 
     &__container {
         position: relative;
-        color: var(--color-white);
+        color: $white;
         padding: 91px 10px 96px;
         display: flex;
         align-items: center;

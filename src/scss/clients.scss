@@ -1,5 +1,5 @@
 .clients {
-    background: var(--color-blue-gray);
+    background: $blue-gray;
     border-radius: 200px 0px 0px 0px;
     padding: 96px 0 120px;
     @media (max-width: 620px) {
@@ -15,7 +15,7 @@
         display: flex;
         align-items: flex-start;
 
-        color: var(--color-white);
+        color: $white;
         gap: 50px;
         margin-bottom: 110px;
 
@@ -68,9 +68,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // border: 1px solid var(--color-white);
-        border-bottom: 1px solid var(--color-white);
-        border-right: 1px solid var(--color-white);
+        // border: 1px solid $white;
+        border-bottom: 1px solid $white;
+        border-right: 1px solid $white;
 
         @media (min-width: 740px) {
             &:nth-child(4n + 4) {
@@ -139,6 +139,6 @@
         font-size: 20px;
         line-height: 46px;
         letter-spacing: 0.02em;
-        color: var(--color-white);
+        color: $white;
     }
 }
